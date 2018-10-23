@@ -20,6 +20,30 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<style>
+			.row {
+				display: flex;
+			}
+
+			.column {
+				flex: 50%;
+			}
+			.highlight {
+				color: #de3434;
+				color: #6c71c4;
+				font-weight: bold;
+			}
+			.main {
+				font-size: 18px;
+			}
+			.details {
+				color: #42affa;
+			}
+			.backlog li {
+				font-size: 22px;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -47,7 +71,7 @@
 					<ul>
 						<li>
 							<i>Outillage</i>
-							<span style="color: #42affa; font-size: 25px;">(Jenkins, Sonar, Artifactory)</span>
+							<span style="color: #42affa; font-size: 25px;">(Jenkins, Sonar, Artifactory, Openshift, NPM)</span>
 						</li>
 						<li>
 							<i>Amélioration du Front</i>
@@ -55,14 +79,14 @@
 						</li>
 						<li>
 							<i>Continuous Delivery</i>
-							<span style="color: #42affa; font-size: 25px;">(Pipeline environnements)</span>
+							<span style="color: #42affa; font-size: 25px;">(Pipeline CD, environnements)</span>
 						</li>
 						<li>
 							<i>Amélioration du SI</i>
-							<span style="color: #42affa; font-size: 25px;">(Feature Flipping, Multitenant)</span>
+							<span style="color: #42affa; font-size: 25px;">(Feature Flipping, Multitenant, Batch)</span>
 						</li>
 					</ul>
-					<p style="color: #de3434">Point de vigilence : le projet front d'EDELIA</p>
+					<p class="highlight">Point de vigilence : le projet front</p>
 				</section>
 
 				<section style="width: 1000px;">
@@ -70,17 +94,22 @@
 					<ul>
 						<li>
 							<i>Sur les montées de versions</i>
-							<span style="color: #42affa; font-size: 25px;">(Spring Boot, JDK, Cassandra...)</span>
+							<span style="color: #42affa; font-size: 25px;">(Spring Boot, JDK, Cassandra)</span>
 						</li>
 						<li>
 							<i>Sur les technologies</i>
-							<span style="color: #42affa; font-size: 25px;">(Kafka, Batch Spark, Camel...)</span>
+							<span style="color: #42affa; font-size: 25px;">(Kafka, Batch Spark, Batch Camel)</span>
 						</li>
 						<li>
 							<i>Sur les problématiques récurrentes</i>
 							<span style="color: #42affa; font-size: 25px;">(Timeseries, Timezone, flux...)</span>
 						</li>
+						<li>
+							<i>Documentation dispersée</i>
+							<span style="color: #42affa; font-size: 25px;">(+40 espaces confluences)</span>
+						</li>
 					</ul>
+					<p class="highlight">Point de vigilence : la documentation</p>
 				</section>
 
 				<section>
@@ -98,35 +127,40 @@
 					<h5>Objectifs</h5>
 					<ul>
 						<li>
-							<i>Animer la communauté</i>
-							<span style="color: #42affa; font-size: 25px;">(Inner sourcing)</span>
+							<i>Animer la communauté (Inner sourcing)</i>
+							<span style="color: #42affa; font-size: 25px;">(Starter, Lib, Coding dojo)</span>
 						</li>
 						<li>
 							<i>Dégrossir les chantiers complexes</i>
 							<span style="color: #42affa; font-size: 25px;">(Etudes, PoC)</span>
 						</li>
 						<li>
-							<i>Fluidifier les process</i>
-							<span style="color: #42affa; font-size: 25px;">(CD, Feature Flipping)</span>
+							<i>Fluidifier les process, améliorer le SI</i>
+							<span style="color: #42affa; font-size: 25px;">(Pipeline CD, Feature Flipping)</span>
 						</li>
 						<li>
 							<i>Rendre EDELIA visible, attirer les talents</i>
-							<span style="color: #42affa; font-size: 25px;">(Open Source, Conférences)</span>
+							<span style="color: #42affa; font-size: 25px;">(Open Source, Conférences, Salons)</span>
 						</li>
 						<li>
-							<i>Aider les architectures</i>
+							<i>Aider les architectes</i>
 							<span style="color: #42affa; font-size: 25px;">(Délégation)</span>
 						</li>
+						<li>
+							<i>Améliorer la documentation</i>
+							<span style="color: #42affa; font-size: 25px;">(Espace unique développeurs)</span>
+						</li>
 					</ul>
+					<p class="highlight">L'équipe transverse n'impose pas : elle recueil des besoins, fait participer les équipes et propose des solutions</p>
 				</section>
 
 				<section>
 					<h5>Organisation</h5>
 					<ul>
 						<li>
-							<p><i>Membres permanents (Lead Tech)</i></p>
+							<p><i>Membres permanents (lead tech)</i></p>
 							<figure style="display: inline-block;">
-								<img style="border-radius: 50%; width: 130px;" src="sylvain.png" />
+								<img style="border-radius: 50%; width: 130px; left: 10px; position: relative;" src="sylvain.png" />
 								<figcaption style="font-size: 20px; color: #42affa; ">Sylvain MAUCOURT</figcaption>
 							</figure>
 							<spacer style="display: inline-block; width: 30px;"></spacer>
@@ -139,7 +173,7 @@
 							<p><i>Participations régulières (à définir)</i></p>
 							<ul>
 								<li>1 développeur pendant une ou deux semaines</li>
-								<li>5 développeurs motivés un vendredi par mois</li>
+								<li>5 développeurs un vendredi par mois</li>
 							</ul>
 						</li>
 					</ul>
@@ -147,18 +181,115 @@
 
 				<section>
 					<h2>Backlog</h2>
-					<p>Alimenté par : </p>
+					<p  style="color: #42affa;">Alimenté par</p>
+					<i>
 					<ul>
-						<li style="color: #42affa;">Dominique VIENNE, Hervé LE BOULER, Jamal HLALI</li>
+						<li>Dominique VIENNE, Hervé LE BOULER, Jamal HLALI</li>
 						<li>Équipe transverse</li>
 						<li>Les products owners</li>
 						<li>Communauté de pratique des développeurs</li>
 					</ul>
-					<p>Priorisé par Dominique, Hervé et Jamal<br /><span style="color: #de3434"> sur la base d’un ROI clairement identifié</span></p>
+					</i>
+					<p class="highlight">Priorisé par Dominique, Hervé et Jamal<br /><span> sur la base d’un ROI clairement identifié</span></p>
+				</section>
+
+				<section style="width: 1100px; left: -100px" class="backlog">
+					<h4>Backlog - IDEES</h4>
+
+					<div class="row">
+						<ul class="column">
+							<li>
+								<i>Reprise des outils de builds</i><br/>
+								<small class="details">ROI à définir, quid devops ?</small>
+							</li>
+							<li>
+								<i>Dev : Feature Flipping</i><br/>
+								<small class="details">ROI < 6 mois, process livraison</small>
+							</li>
+							<li>
+								<i>Etude : Migration JDK</i><br/>
+								<small class="details">(ROI < 6 mois, capitalisation, sécurité)</small>
+							</li>
+							<li>
+								<i>Etude : Migration Spring Boot 2</i><br/>
+								<small class="details">(ROI < 6 mois, capitalisation, sécurité)</small>
+							</li>
+							<li>
+								<i>Dev : Lib Atomic Design</i><br/>
+								<small class="details">(ROI < 2 mois, gouvernance, process)</small>
+							</li>
+							<li>
+								<i>Dev : Catalogue Atomic Design</i><br/>
+								<small class="details">(ROI < 6 mois, gouvernance, process)</small>
+							</li>
+							<li>
+								<i>Dev : Abstraction Kafka</i><br/>
+								<small class="details">(ROI < 12 mois, capitalisation)</small>
+							</li>
+							<li>
+								<i>Etude : Cartographie Timezone</i><br/>
+								<small class="details">(ROI < 12 mois, capitalisation, service client)</small>
+							</li>
+							<li>
+								<i>Dev : Migration Angular 6 LTS</i><br/>
+								<small class="details">(ROI < 1 mois, critique)</small>
+							</li>
+							<li>
+								<i>Etude/PoC : Kafka indus</i><br/>
+								<small class="details">(ROI < 24 mois, gouvernance SI)</small>
+							</li>
+						</ul>
+
+						<ul class="column">
+							<li>
+								<i>Outillage : Démocratisation Stats Prod (ELK, Perf)</i><br/>
+								<small class="details">(ROI < 12 mois, gouvernance)</small>
+							</li>
+							<li>
+								<i>Dev : Lib calcul consommation</i><br/>
+								<small class="details">(ROI < 12 mois, capitalisation)</small>
+							</li>
+							<li>
+								<i>Outillage : Tableau de bord FT</i><br/>
+								<small class="details">(ROI long terme, gouvernance)</small>
+							</li>
+							<li>
+								<i>Doc : Bonnes pratiques dev (clients REST...)</i><br/>
+								<small class="details">(ROI long terme, capitalisation)</small>
+							</li>
+							<li>
+								<i>Outillage / Dev : Tests d'intégration et recette</i><br/>
+								<small class="details">(ROI long terme, capitalisation)</small>
+							</li>
+							<li>
+								<i>Dev : Lib DDD</i><br/>
+								<small class="details">(ROI long terme, capitalisation)</small>
+							</li>
+							<li>
+								<i>Dev : Lib Tests Composants</i><br/>
+								<small class="details">(ROI long terme, capitalisation)</small>
+							</li>
+							<li>
+								<i>Roadmap : Cible arbo Artifactory</i><br />
+								<small class="details">(ROI long terme, capitalisation)</small>
+							</li>
+							<li>
+								<i>Outillage : Mise en place repo NPM</i><br />
+								<small class="details">(ROI < 12 mois, capitalisation)</small>
+							</li>
+							<li>
+								<i>Veille techno, Coding Dojo, Salons</i><br />
+								<small class="details">(ROI long terme)</small>
+							</li>
+						</ul>
+
+					</div>
+
+
 				</section>
 
 				<section>
-					<h5>Des questions ?</h5>
+					<h5>The End</h5>
 					<div style="text-align: center;">
 						<div style="background: url('https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif'); margin: auto; width: 400px; height: 297px">
 						</div>
