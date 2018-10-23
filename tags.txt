@@ -1,0 +1,39 @@
+
+https://nuagedemots.co/
+
+Springboot Springboot Springboot starter starter
+Opensource Opensource
+Innersourcing Innersourcing Innersourcing
+Kafka Kafka Kafka
+Cassandra Cassandra Cassandra
+Spark Spark Spark Spark
+Batch Batch Batch Batch
+Camel Camel
+Timeseries Timeseries
+Communauté Communauté Communauté Communauté
+Etude Etude
+POC POC POC POC
+JDK JDK
+Front Front Front
+Webpack Webpack Webpack
+Atomicdesign Atomicdesign Atomicdesign Atomicdesign
+Pullrequest Pullrequest
+CD CD CD
+Pipeline Pipeline
+Architool Architool Architool
+Documentation Documentation Documentation  Documentation
+Timezone
+Featureflipping
+conférence
+Angular Angular Angular
+Java Java
+craftsmanship craftsmanship craftsmanship craftsmanship
+Automatisation  Automatisation Automatisation
+Process Process
+DDD DDD
+ELK ELK ELK
+Test Test Test Test
+Coordination Coordination
+Architecture Architecture
+Communication Communication
+Capitalisation Capitalisation  Capitalisation Capitalisation
